@@ -6,6 +6,7 @@ using HellowWorld.Extensions;
 using HellowWorld.InheritanceSample;
 using HellowWorld.ListSample;
 using HellowWorld.Locking;
+using HellowWorld.MethodsSamples;
 using HellowWorld.MultiThreading;
 using System;
 using System.Collections.Generic;
@@ -73,9 +74,13 @@ namespace HellowWorld
 
             //  SimpleInheritanceExample();
 
-            ExampleTitle("StaticConstructorSample");
+            // ExampleTitle("StaticConstructorSample");
 
-            ConstructorExamples();
+            //ConstructorExamples();
+
+            ExampleTitle("Ref Out Sample");
+
+            RefAndOutExample();
         }
 
         private static void ExampleTitle(string name)
@@ -236,6 +241,16 @@ namespace HellowWorld
             staticConstructorSample.Main();
             staticConstructorSample2.Main();
             
+
+
+        }
+
+         private static void RefAndOutExample()
+        {
+            RefAndOutSample refAndOutSample = new RefAndOutSample();
+
+            refAndOutSample.RefSample();
+            refAndOutSample.OutSample();
 
 
         }
