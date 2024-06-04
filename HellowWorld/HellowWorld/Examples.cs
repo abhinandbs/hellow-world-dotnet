@@ -1,4 +1,5 @@
-﻿using HellowWorld.DelegateExamples;
+﻿using HellowWorld.Constructors;
+using HellowWorld.DelegateExamples;
 using HellowWorld.DesignPatterns.CreationalDesignPatterns;
 using HellowWorld.DesignPatterns.CreationalDesignPatterns.Singelton;
 using HellowWorld.Extensions;
@@ -29,49 +30,52 @@ namespace HellowWorld
             SingletonExample();
 
             //ExampleTitle("Extension Example");
-          
+
             //ExtensionExample();
 
-          //ExampleTitle("Unique List Example");
-          
+            //ExampleTitle("Unique List Example");
+
             //UniqueListExample();
 
-           // ExampleTitle("Sempahore");
+            // ExampleTitle("Sempahore");
 
-           // SempahoreExample();
+            // SempahoreExample();
 
-           // ExampleTitle("Delegate Example");
+            // ExampleTitle("Delegate Example");
 
-           // DelegateExample();
+            // DelegateExample();
 
             //ExampleTitle("Thread Example");
 
-           // ThreadExample();
+            // ThreadExample();
 
-          //  ExampleTitle("Task Sample");
+            //  ExampleTitle("Task Sample");
 
-          //  TaskExample();
+            //  TaskExample();
 
             //ExampleTitle("Factory Sample");
 
-          //  FactoryExample();
+            //  FactoryExample();
 
-           // ExampleTitle("Abstract Factory Sample");
+            // ExampleTitle("Abstract Factory Sample");
 
-           // AbstractFactoryExample();
+            // AbstractFactoryExample();
 
-           // ExampleTitle("Auto Reset Event Sample");
+            // ExampleTitle("Auto Reset Event Sample");
 
-         //   AutoResetEventExample();
+            //   AutoResetEventExample();
 
-          //  ExampleTitle("Manual Reset Event Sample");
+            //  ExampleTitle("Manual Reset Event Sample");
 
-          //  ManualResetEventExample();
+            //  ManualResetEventExample();
 
-         //  ExampleTitle("SimpleInheritanceExample");
+            //  ExampleTitle("SimpleInheritanceExample");
 
-          //  SimpleInheritanceExample();
+            //  SimpleInheritanceExample();
 
+            ExampleTitle("StaticConstructorSample");
+
+            ConstructorExamples();
         }
 
         private static void ExampleTitle(string name)
@@ -221,6 +225,19 @@ namespace HellowWorld
             Base carBase2 = new Child();
 
             carBase2.Method1();
+        }
+
+        private static void ConstructorExamples() {
+
+            ConstructorSample staticConstructorSample = new ConstructorSample();
+            ConstructorSample staticConstructorSample2 = new ConstructorSample();
+            
+
+            staticConstructorSample.Main();
+            staticConstructorSample2.Main();
+            
+
+
         }
     }
 }
