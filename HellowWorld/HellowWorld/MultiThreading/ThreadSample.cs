@@ -28,7 +28,16 @@ namespace HellowWorld.MultiThreading
             Task task = new Task(()=>DoWork("car"));
             task.Start();
 
-            
+            // Queue a method for execution on a thread pool thread
+
+            ThreadPool.QueueUserWorkItem((state) =>
+            {
+                Console.WriteLine("ThreadPool thread executing...");
+                Thread.Sleep(2000); // Simulating work
+                Console.WriteLine("ThreadPool thread finished.");
+            });
+
+
         }
         public static void DoWork(string name)
         {

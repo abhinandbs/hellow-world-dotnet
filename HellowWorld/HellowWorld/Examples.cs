@@ -2,6 +2,7 @@
 using HellowWorld.DelegateExamples;
 using HellowWorld.DesignPatterns.CreationalDesignPatterns;
 using HellowWorld.DesignPatterns.CreationalDesignPatterns.Singelton;
+using HellowWorld.Exercises;
 using HellowWorld.Extensions;
 using HellowWorld.InheritanceSample;
 using HellowWorld.ListSample;
@@ -81,6 +82,11 @@ namespace HellowWorld
             ExampleTitle("Ref Out Sample");
 
             RefAndOutExample();
+
+            ExampleTitle("Exercise");
+            ExercisesSample.Method();
+
+            MonitorSample.Main();
         }
 
         private static void ExampleTitle(string name)

@@ -13,30 +13,33 @@ namespace HellowWorld.MethodsSamples
         {
             var name = " Ref Test";
 
-          var newName =  RefData(ref name);
+            RefData(ref name);
 
-            Console.WriteLine(newName);
+            Console.WriteLine(name);
 
         }
 
         public void OutSample()
         {
            
-            var newName = OutData(out string name);
+           OutData(out string name);
 
-            Console.WriteLine(newName);
+    
+            Console.WriteLine(name);
 
         }
         private string OutData(out string name)
         {
             name= "Out Test";
-            return name + "name";
+            name = name + "name";
+            return name;
         }
 
 
         private string RefData(ref string name) {
 
-            return name + "name";
+            name = name + "name";
+            return name;
         }
     }
 }
