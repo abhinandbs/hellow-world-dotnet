@@ -16,5 +16,41 @@ namespace HellowWorld.Extensions
                 return result;
             }else { return null; }
         }
+
+        public static int? UpdateTest(this Person person)
+        {
+            return 0;
+        }
     }
+
+    public class Person
+    {
+
+       public string? Name { get; set; }
+
+        public void car()
+        {
+
+        }
+    }
+
+    public class MainClass
+    {
+
+        void MainMethod()
+        {
+            Person person1 = new Person { Name = "abhinand" };
+            
+            var result = person1.UpdateTest();
+
+            person1.car();
+
+        }
+        
+
+
+
+
+    }
+
 }

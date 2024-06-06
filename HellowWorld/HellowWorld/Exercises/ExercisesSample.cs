@@ -19,10 +19,7 @@ namespace HellowWorld.Exercises
 
       
 
-        public interface IEngine
-        {
-            void EngineType();
-        }
+        
         public interface IWheel
         {
             void WheelType();
@@ -43,17 +40,25 @@ namespace HellowWorld.Exercises
         }
 
         // Implementations of Engine
+
+
+        public abstract class IEngine 
+        {
+            public abstract void EngineType();
+            
+
+        }
         public class DieselEngine : IEngine
         {
-            public void EngineType()
+            public override void EngineType()
             {
-                Console.WriteLine("Diesel Engine");
+                Console.WriteLine("Petrol Engine");
             }
         }
 
         public class PetrolEngine : IEngine
         {
-            public void EngineType()
+            public override void EngineType()
             {
                 Console.WriteLine("Petrol Engine");
             }

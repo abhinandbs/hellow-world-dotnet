@@ -27,9 +27,9 @@ namespace HellowWorld
         public static void SampleExamples()
         {
 
-           ExampleTitle("Singelton Example");
+        //   ExampleTitle("Singelton Example");
 
-            SingletonExample();
+          //  SingletonExample();
 
             //ExampleTitle("Extension Example");
 
@@ -79,14 +79,21 @@ namespace HellowWorld
 
             //ConstructorExamples();
 
-            ExampleTitle("Ref Out Sample");
+           // ExampleTitle("Ref Out Sample");
 
-            RefAndOutExample();
+           // RefAndOutExample();
 
-            ExampleTitle("Exercise");
-            ExercisesSample.Method();
+           // ExampleTitle("Exercise");
+           // ExercisesSample.Method();
 
-            MonitorSample.Main();
+           // MonitorSample.Main();
+
+            GenericSample.MainMethod();
+
+            //ConstructorSample constructorSample = new ConstructorSample("test");
+
+            
+
         }
 
         private static void ExampleTitle(string name)
